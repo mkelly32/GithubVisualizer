@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Github Visualization{% endblock %}</title>
+    <meta name="author" content="Mike Kelly">
+    <meta name="description" content="A website to visualize github data.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static "visualizer/base.css" %}">
+</head>
+<body>
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+
+<footer>
+    <p>Author: Mike Kelly</p>
+    <p><a href="mkelly32@tcd.ie">mkelly32@tcd.ie</a></p>
+</footer> 
+</body>
+</html> 
